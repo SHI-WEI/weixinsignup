@@ -1,0 +1,5 @@
+F:\微信\QDWx\QDWx.Model\bin\Debug\QDWx.Model.dll
+F:\微信\QDWx\QDWx.Model\bin\Debug\QDWx.Model.pdb
+F:\微信\QDWx\QDWx.Model\obj\Debug\QDWx.Model.csprojResolveAssemblyReference.cache
+F:\微信\QDWx\QDWx.Model\obj\Debug\QDWx.Model.dll
+F:\微信\QDWx\QDWx.Model\obj\Debug\QDWx.Model.pdb

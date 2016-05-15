@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "签到DEMO";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<header class="header header-transparent header-waterfall"></header>
+<main class="content">
+    <div class="content-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+                    <h1 class="heading">签到DEMO</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+                <section class="content-inner margin-top-no">
+                    <div class="card">
+                        <div class="card-main">
+                            <div class="card-inner">
+                                <p>欢迎使用签到DEMO，请关注<a class="btn btn-flat" data-toggle="modal" href="#modal_wx_image">“签到DEMO”微信公众号</a>后，输入下方签到码进行签到、签退。</p>
+                                <blockquote><img src="" alt="签到码" id="code" /></blockquote>
+                                <p>本系统为内部测试使用。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" class="modal fade" id="modal_wx_image" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-heading">
+                    <a class="modal-close" data-dismiss="modal">×</a>
+                    <h2 class="modal-title">打开微信，扫描下方二维码关注“签到DEMO”公众号</h2>
+                </div>
+                <div class="modal-inner">
+
+                </div>
+                <div class="modal-footer">
+                    <p class="text-right">
+                        <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">关闭</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <p>签到DEMO By SW&SXX</p>
+    </div>
+</footer>
+@section Script{
+    <script type="text/javascript">
+        setInterval("GetCode()", 1000);//1秒循环一次
+        function GetCode() {
+            $.ajax({
+                type: "GET",
+                url: "/BMS/GetQrCode",
+                dataType: "json",
+                timeout: 3000,
+                success: function (data) {
+                    var curUrl = $("#code")[0].src;
+                    if(curUrl != data.url){
+                        $("#code").attr('src', data.url);
+                    }
+                }
+            });
+        }
+    </script>
+}

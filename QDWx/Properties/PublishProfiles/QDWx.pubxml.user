@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\QDWX\发布</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Gma.QrCodeNet.Encoding.dll">
+      <publishTime>03/03/2013 04:35:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/QDWx.CommonService.dll">
+      <publishTime>05/11/2016 13:56:25</publishTime>
+    </File>
+    <File Include="bin/QDWx.dll">
+      <publishTime>05/11/2016 13:56:26</publishTime>
+    </File>
+    <File Include="bin/QDWx.MessageEntity.dll">
+      <publishTime>05/11/2016 13:56:25</publishTime>
+    </File>
+    <File Include="bin/Senparc.Weixin.dll">
+      <publishTime>01/27/2016 23:03:54</publishTime>
+    </File>
+    <File Include="bin/Senparc.Weixin.MP.dll">
+      <publishTime>01/27/2016 23:03:54</publishTime>
+    </File>
+    <File Include="bin/Senparc.Weixin.MP.MvcExtension.dll">
+      <publishTime>01/27/2016 23:03:54</publishTime>
+    </File>
+    <File Include="bin/Senparc.Weixin.Open.dll">
+      <publishTime>01/27/2016 23:03:54</publishTime>
+    </File>
+    <File Include="bin/Senparc.Weixin.QY.dll">
+      <publishTime>01/27/2016 23:03:54</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Common.dll">
+      <publishTime>11/25/2012 11:08:38</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Interfaces.dll">
+      <publishTime>11/25/2012 11:08:38</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Redis.dll">
+      <publishTime>11/25/2012 11:08:38</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Text.dll">
+      <publishTime>11/25/2012 11:08:38</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>08/13/2013 00:19:06</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>08/13/2013 00:19:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/04/2016 22:31:56</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Http.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Http.WebHost.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>02/04/2016 22:31:58</publishTime>
+    </File>
+    <File Include="Content/assets/js-project/project.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/bootstrap.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/datepicker.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/form-adv-label.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/form-adv-textarea.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/header.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/menu.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/modal.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/snackbar.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/tab.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/tile.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/wave.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/js/_.js">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass-project/project.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/addons/material-icons/_core.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/addons/material-icons/_larger.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/addons/material-icons/_path.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/addons/material-icons/_variables.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/addons/_material-icons.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/addons/_waves.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/base.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/base/_grid.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/base/_reset.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_avatar.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_breadcrumb.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_button-flat.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_button-float.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_button.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_card.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_code.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_dropdown.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_form-adv-checkbox.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_form-adv-datepicker.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_form-adv-label.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_form-adv-switch.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_form-adv-textarea.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_form.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_label.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_modal.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_nav.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_progress-circular.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_progress-loadbar.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_progress.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_snackbar.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_tab.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_table.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/components/_tile.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/elements/_content.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/elements/_footer.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/elements/_header.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/elements/_menu.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/mixin/_css3.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/mixin/_grid.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/mixin/_responsive.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/mixin/_utilities.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/utilities/_print.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/utilities/_utilities-responsive.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/utilities/_utilities.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/var/_colours.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/assets/sass/var/_variables.scss">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/base.css">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/base.min.css">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/fonts/codepoints">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/fonts/MaterialIcons-Regular.eot">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/fonts/MaterialIcons-Regular.ijmap">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/fonts/MaterialIcons-Regular.ttf">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/fonts/MaterialIcons-Regular.woff">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/fonts/MaterialIcons-Regular.woff2">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/fonts/README.md">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/images/bg/amber.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/images/bg/brand.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/images/bg/green.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/images/bg/purple.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/images/bg/red.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/images/bg/teal.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/project.css">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/project.min.css">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/fn.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/mixin/mobile.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/mixin/setArrow.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/mixin/setChecked.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/mixin/setOnepx.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/mixin/text.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/reset.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/variable/global.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/variable/monokai.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/variable/weui_button.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/variable/weui_cell.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/variable/weui_grid.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/variable/weui_msg.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/base/variable/weui_progress.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/icon/weui_font.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/icon/weui_icon_font.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/weui.css">
+      <publishTime>05/10/2016 20:05:57</publishTime>
+    </File>
+    <File Include="Content/css/wx/weui.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/weui.min.css">
+      <publishTime>05/10/2016 20:05:57</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_button/weui_btn_default.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_button/weui_btn_disabled.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_button/weui_btn_global.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_button/weui_btn_plain.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_button/weui_btn_primary.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_button/weui_btn_warn.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_button/weui_button.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_access.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_cell_global.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_check.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_check/weui_checkbox.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_check/weui_check_common.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_check/weui_radio.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_form.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_form/weui_form_common.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_form/weui_select.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_form/weui_select_after.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_form/weui_select_before.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_form/weui_vcode.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_switch.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_cell/weui_uploader.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_grid/weui_grid.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_media_box/weui_media_box.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_page/weui_article.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_page/weui_msg.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_panel/weui_panel.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_progress/weui_progress.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_searchbar/weui_searchbar.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_tab/navbar.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_tab/tabbar.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_tab/weui_tab.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_tips/weui_actionsheet.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_tips/weui_dialog.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_tips/weui_mask.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/css/wx/widget/weui_tips/weui_toast.less">
+      <publishTime>04/22/2016 16:19:28</publishTime>
+    </File>
+    <File Include="Content/images/samples/landscape.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/images/samples/portrait.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/images/screenshots/material01.png">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/images/screenshots/material02.png">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/images/screenshots/material03.png">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/images/users/avatar-001.jpg">
+      <publishTime>02/10/2016 22:26:52</publishTime>
+    </File>
+    <File Include="Content/js/base.js">
+      <publishTime>02/10/2016 22:27:20</publishTime>
+    </File>
+    <File Include="Content/js/base.min.js">
+      <publishTime>02/10/2016 22:27:20</publishTime>
+    </File>
+    <File Include="Content/js/project.js">
+      <publishTime>02/10/2016 22:27:20</publishTime>
+    </File>
+    <File Include="Content/js/project.min.js">
+      <publishTime>02/10/2016 22:27:20</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/04/2016 22:31:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/06/2016 23:19:30</publishTime>
+    </File>
+    <File Include="Scripts/Scan_INC.js">
+      <publishTime>05/11/2016 14:04:27</publishTime>
+    </File>
+    <File Include="Views/BMS/Index.cshtml">
+      <publishTime>05/11/2016 13:52:02</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/10/2016 22:39:26</publishTime>
+    </File>
+    <File Include="Views/Shared/_WxLayout.cshtml">
+      <publishTime>05/11/2016 12:59:54</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/04/2016 22:31:46</publishTime>
+    </File>
+    <File Include="Views/Wx/JsConfig.cshtml">
+      <publishTime>05/11/2016 13:59:25</publishTime>
+    </File>
+    <File Include="Views/Wx/Scan.cshtml">
+      <publishTime>05/11/2016 12:38:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/10/2016 19:24:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

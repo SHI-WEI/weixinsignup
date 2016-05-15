@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Scan";
+    Layout = "~/Views/Shared/_WxLayout.cshtml";
+}
+@section Script{
+    <script src="@Url.Content("~/Scripts/Scan_INC.js")"></script>
+}
+<a href="javascript:" class="weui_btn weui_btn_primary" onclick="scan()">按钮</a>

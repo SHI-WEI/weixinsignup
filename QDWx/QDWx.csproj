@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80054B09-3577-4E02-B2DE-D6F8971F607B}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QDWx</RootNamespace>
+    <AssemblyName>QDWx</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Senparc.Weixin, Version=4.5.7.37229, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Senparc.Weixin.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.MP, Version=13.5.6.37230, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Senparc.Weixin.MP.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.MP.MvcExtension, Version=4.0.1.37229, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Senparc.Weixin.MP.MvcExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.Open">
+      <HintPath>..\Lib\Senparc.Weixin.Open.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.QY">
+      <HintPath>..\Lib\Senparc.Weixin.QY.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BMSController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WxController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\JsConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\assets\js-project\project.js" />
+    <Content Include="Content\assets\js\bootstrap.js" />
+    <Content Include="Content\assets\js\datepicker.js" />
+    <Content Include="Content\assets\js\form-adv-label.js" />
+    <Content Include="Content\assets\js\form-adv-textarea.js" />
+    <Content Include="Content\assets\js\header.js" />
+    <Content Include="Content\assets\js\menu.js" />
+    <Content Include="Content\assets\js\modal.js" />
+    <Content Include="Content\assets\js\snackbar.js" />
+    <Content Include="Content\assets\js\tab.js" />
+    <Content Include="Content\assets\js\tile.js" />
+    <Content Include="Content\assets\js\wave.js" />
+    <Content Include="Content\assets\js\_.js" />
+    <Content Include="Content\css\base.css" />
+    <Content Include="Content\css\base.min.css" />
+    <Content Include="Content\css\images\bg\amber.jpg" />
+    <Content Include="Content\css\images\bg\brand.jpg" />
+    <Content Include="Content\css\images\bg\green.jpg" />
+    <Content Include="Content\css\images\bg\purple.jpg" />
+    <Content Include="Content\css\images\bg\red.jpg" />
+    <Content Include="Content\css\images\bg\teal.jpg" />
+    <Content Include="Content\css\project.css" />
+    <Content Include="Content\css\project.min.css" />
+    <Content Include="Content\css\wx\example.css" />
+    <Content Include="Content\css\wx\weui.css" />
+    <Content Include="Content\css\wx\weui.min.css" />
+    <Content Include="Content\images\samples\landscape.jpg" />
+    <Content Include="Content\images\samples\portrait.jpg" />
+    <Content Include="Content\images\screenshots\material01.png" />
+    <Content Include="Content\images\screenshots\material02.png" />
+    <Content Include="Content\images\screenshots\material03.png" />
+    <Content Include="Content\images\users\avatar-001.jpg" />
+    <Content Include="Content\js\base.js" />
+    <Content Include="Content\js\base.min.js" />
+    <Content Include="Content\js\project.js" />
+    <Content Include="Content\js\project.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\Scan_INC.js" />
+    <Content Include="Scripts\wx\router.min.js" />
+    <Content Include="Scripts\wx\zepto.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QDWx.CommonService\QDWx.CommonService.csproj">
+      <Project>{d117bc12-fded-41df-8970-abf923cebc6c}</Project>
+      <Name>QDWx.CommonService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QDWx.MessageEntity\QDWx.MessageEntity.csproj">
+      <Project>{7b4f1bf1-2016-41d4-951a-fe5f168d4367}</Project>
+      <Name>QDWx.MessageEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\assets\sass-project\project.scss" />
+    <Content Include="Content\assets\sass\addons\material-icons\_core.scss" />
+    <Content Include="Content\assets\sass\addons\material-icons\_larger.scss" />
+    <Content Include="Content\assets\sass\addons\material-icons\_path.scss" />
+    <Content Include="Content\assets\sass\addons\material-icons\_variables.scss" />
+    <Content Include="Content\assets\sass\addons\_material-icons.scss" />
+    <Content Include="Content\assets\sass\addons\_waves.scss" />
+    <Content Include="Content\assets\sass\base.scss" />
+    <Content Include="Content\assets\sass\base\_grid.scss" />
+    <Content Include="Content\assets\sass\base\_reset.scss" />
+    <Content Include="Content\assets\sass\components\_avatar.scss" />
+    <Content Include="Content\assets\sass\components\_breadcrumb.scss" />
+    <Content Include="Content\assets\sass\components\_button-flat.scss" />
+    <Content Include="Content\assets\sass\components\_button-float.scss" />
+    <Content Include="Content\assets\sass\components\_button.scss" />
+    <Content Include="Content\assets\sass\components\_card.scss" />
+    <Content Include="Content\assets\sass\components\_code.scss" />
+    <Content Include="Content\assets\sass\components\_dropdown.scss" />
+    <Content Include="Content\assets\sass\components\_form-adv-checkbox.scss" />
+    <Content Include="Content\assets\sass\components\_form-adv-datepicker.scss" />
+    <Content Include="Content\assets\sass\components\_form-adv-label.scss" />
+    <Content Include="Content\assets\sass\components\_form-adv-switch.scss" />
+    <Content Include="Content\assets\sass\components\_form-adv-textarea.scss" />
+    <Content Include="Content\assets\sass\components\_form.scss" />
+    <Content Include="Content\assets\sass\components\_label.scss" />
+    <Content Include="Content\assets\sass\components\_modal.scss" />
+    <Content Include="Content\assets\sass\components\_nav.scss" />
+    <Content Include="Content\assets\sass\components\_progress-circular.scss" />
+    <Content Include="Content\assets\sass\components\_progress-loadbar.scss" />
+    <Content Include="Content\assets\sass\components\_progress.scss" />
+    <Content Include="Content\assets\sass\components\_snackbar.scss" />
+    <Content Include="Content\assets\sass\components\_tab.scss" />
+    <Content Include="Content\assets\sass\components\_table.scss" />
+    <Content Include="Content\assets\sass\components\_tile.scss" />
+    <Content Include="Content\assets\sass\elements\_content.scss" />
+    <Content Include="Content\assets\sass\elements\_footer.scss" />
+    <Content Include="Content\assets\sass\elements\_header.scss" />
+    <Content Include="Content\assets\sass\elements\_menu.scss" />
+    <Content Include="Content\assets\sass\mixin\_css3.scss" />
+    <Content Include="Content\assets\sass\mixin\_grid.scss" />
+    <Content Include="Content\assets\sass\mixin\_responsive.scss" />
+    <Content Include="Content\assets\sass\mixin\_utilities.scss" />
+    <Content Include="Content\assets\sass\utilities\_print.scss" />
+    <Content Include="Content\assets\sass\utilities\_utilities-responsive.scss" />
+    <Content Include="Content\assets\sass\utilities\_utilities.scss" />
+    <Content Include="Content\assets\sass\var\_colours.scss" />
+    <Content Include="Content\assets\sass\var\_variables.scss" />
+    <Content Include="Content\css\fonts\codepoints" />
+    <Content Include="Content\css\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Content\css\fonts\MaterialIcons-Regular.ijmap" />
+    <Content Include="Content\css\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Content\css\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Content\css\fonts\MaterialIcons-Regular.woff2" />
+    <Content Include="Content\css\fonts\README.md" />
+    <Content Include="Content\css\wx\base\fn.less" />
+    <Content Include="Content\css\wx\base\mixin\mobile.less" />
+    <Content Include="Content\css\wx\base\mixin\setArrow.less" />
+    <Content Include="Content\css\wx\base\mixin\setChecked.less" />
+    <Content Include="Content\css\wx\base\mixin\setOnepx.less" />
+    <Content Include="Content\css\wx\base\mixin\text.less" />
+    <Content Include="Content\css\wx\base\reset.less" />
+    <Content Include="Content\css\wx\base\variable\global.less" />
+    <Content Include="Content\css\wx\base\variable\monokai.less" />
+    <Content Include="Content\css\wx\base\variable\weui_button.less" />
+    <Content Include="Content\css\wx\base\variable\weui_cell.less" />
+    <Content Include="Content\css\wx\base\variable\weui_grid.less" />
+    <Content Include="Content\css\wx\base\variable\weui_msg.less" />
+    <Content Include="Content\css\wx\base\variable\weui_progress.less" />
+    <Content Include="Content\css\wx\icon\weui_font.less" />
+    <Content Include="Content\css\wx\icon\weui_icon_font.less" />
+    <Content Include="Content\css\wx\weui.less" />
+    <Content Include="Content\css\wx\widget\weui_button\weui_btn_default.less" />
+    <Content Include="Content\css\wx\widget\weui_button\weui_btn_disabled.less" />
+    <Content Include="Content\css\wx\widget\weui_button\weui_btn_global.less" />
+    <Content Include="Content\css\wx\widget\weui_button\weui_btn_plain.less" />
+    <Content Include="Content\css\wx\widget\weui_button\weui_btn_primary.less" />
+    <Content Include="Content\css\wx\widget\weui_button\weui_btn_warn.less" />
+    <Content Include="Content\css\wx\widget\weui_button\weui_button.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_access.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_cell_global.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_check.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_check\weui_checkbox.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_check\weui_check_common.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_check\weui_radio.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_form.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_form\weui_form_common.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_form\weui_select.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_form\weui_select_after.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_form\weui_select_before.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_form\weui_vcode.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_switch.less" />
+    <Content Include="Content\css\wx\widget\weui_cell\weui_uploader.less" />
+    <Content Include="Content\css\wx\widget\weui_grid\weui_grid.less" />
+    <Content Include="Content\css\wx\widget\weui_media_box\weui_media_box.less" />
+    <Content Include="Content\css\wx\widget\weui_page\weui_article.less" />
+    <Content Include="Content\css\wx\widget\weui_page\weui_msg.less" />
+    <Content Include="Content\css\wx\widget\weui_panel\weui_panel.less" />
+    <Content Include="Content\css\wx\widget\weui_progress\weui_progress.less" />
+    <Content Include="Content\css\wx\widget\weui_searchbar\weui_searchbar.less" />
+    <Content Include="Content\css\wx\widget\weui_tab\navbar.less" />
+    <Content Include="Content\css\wx\widget\weui_tab\tabbar.less" />
+    <Content Include="Content\css\wx\widget\weui_tab\weui_tab.less" />
+    <Content Include="Content\css\wx\widget\weui_tips\weui_actionsheet.less" />
+    <Content Include="Content\css\wx\widget\weui_tips\weui_dialog.less" />
+    <Content Include="Content\css\wx\widget\weui_tips\weui_mask.less" />
+    <Content Include="Content\css\wx\widget\weui_tips\weui_toast.less" />
+    <None Include="Properties\PublishProfiles\QDWx.pubxml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\BMS\Index.cshtml" />
+    <Content Include="Views\Shared\_WxLayout.cshtml" />
+    <Content Include="Views\Wx\Scan.cshtml" />
+    <Content Include="Views\Wx\JsConfig.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12857</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12857/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
