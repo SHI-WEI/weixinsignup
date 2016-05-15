@@ -13,3 +13,7 @@ E:\QDWX\QDWx\QDWx.MessageEntity\bin\Debug\QDWx.MessageEntity.pdb
 E:\QDWX\QDWx\QDWx.MessageEntity\obj\Debug\QDWx.MessageEntity.csprojResolveAssemblyReference.cache
 E:\QDWX\QDWx\QDWx.MessageEntity\obj\Debug\QDWx.MessageEntity.dll
 E:\QDWX\QDWx\QDWx.MessageEntity\obj\Debug\QDWx.MessageEntity.pdb
+F:\微信\QDWX\QDWx\QDWx.MessageEntity\bin\Debug\QDWx.MessageEntity.dll
+F:\微信\QDWX\QDWx\QDWx.MessageEntity\bin\Debug\QDWx.MessageEntity.pdb
+F:\微信\QDWX\QDWx\QDWx.MessageEntity\obj\Debug\QDWx.MessageEntity.dll
+F:\微信\QDWX\QDWx\QDWx.MessageEntity\obj\Debug\QDWx.MessageEntity.pdb

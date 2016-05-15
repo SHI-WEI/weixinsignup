@@ -1,5 +1,6 @@
 ﻿using QDWx.CommonService.MessageHandlers;
 using Senparc.Weixin.MP;
+using Senparc.Weixin.MP.AdvancedAPIs;
 using Senparc.Weixin.MP.CommonAPIs;
 using Senparc.Weixin.MP.Entities;
 using Senparc.Weixin.MP.Entities.Request;
@@ -74,8 +75,13 @@ namespace QDWx.Controllers
             return PartialView("~/Views/Wx/JsConfig.cshtml", config);
         }
 
-        public ActionResult Scan()
+        public ActionResult Scan(string openid)
         {
+            if (string.IsNullOrWhiteSpace(openid))
+            {
+                openid = string.Empty;
+            }
+            ViewBag.openid = openid;
             return View();
         }
 

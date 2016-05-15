@@ -1,18 +1,19 @@
-﻿using System;
+﻿using QDWx.CommonService.Utilities;
+using QDWx.MessageEntity;
+using Senparc.Weixin.Context;
+using Senparc.Weixin.MP.AdvancedAPIs;
+using Senparc.Weixin.MP.Agent;
+using Senparc.Weixin.MP.Entities;
+using Senparc.Weixin.MP.Entities.Request;
+using Senparc.Weixin.MP.Helpers;
+using Senparc.Weixin.MP.MessageHandlers;
+using System;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Web;
-using System.Configuration;
-using Senparc.Weixin.MP.Agent;
-using Senparc.Weixin.Context;
-using Senparc.Weixin.MP.Entities;
-using Senparc.Weixin.MP.Entities.Request;
-using Senparc.Weixin.MP.MessageHandlers;
-using Senparc.Weixin.MP.Helpers;
-using QDWx.CommonService.Utilities;
-using QDWx.MessageEntity;
 
 namespace QDWx.CommonService.MessageHandlers
 {
@@ -68,21 +69,16 @@ namespace QDWx.CommonService.MessageHandlers
         public override IResponseMessageBase OnTextRequest(RequestMessageText requestMessage)
         {
             var responseMessage = base.CreateResponseMessage<ResponseMessageText>();
-
             if (requestMessage.Content == null)
             {
 
             }
             else
             {
-                if (MessageManager.Check(requestMessage.Content))
-                {
-                    responseMessage.Content = @"签到成功";
-                }
+                if (requestMessage.Content.Equals("签到"))
+                    responseMessage.Content = "<a href='http://wx.littlesunclass.com/wx/Scan?openid=" + requestMessage.FromUserName + "'>点击进入扫码页面</a>";
                 else
-                {
-                    responseMessage.Content = @"您输入的签到码有误";
-                }
+                    responseMessage.Content = "回复“签到”获取签到链接";
             }
             return responseMessage;
         }
