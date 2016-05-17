@@ -68,7 +68,7 @@ namespace QDWx.Controllers
             ViewModel.JsConfig config = new ViewModel.JsConfig();
             config.ticket = CommonApi.GetTicket(WxAppID, WxAppSecret).ticket;
             config.appId = WxAppID;
-            config.timestamp = JSSDKHelper.GetTimestamp(); ;
+            config.timestamp = JSSDKHelper.GetTimestamp(); 
             config.nonceStr = JSSDKHelper.GetNoncestr();
             config.url = Request.Url.AbsoluteUri.ToString();
             config.signature = JSSDKHelper.GetSignature(config.ticket, config.nonceStr, config.timestamp, config.url);
@@ -76,6 +76,16 @@ namespace QDWx.Controllers
         }
 
         public ActionResult Scan(string openid)
+        {
+            if (string.IsNullOrWhiteSpace(openid))
+            {
+                openid = string.Empty;
+            }
+            ViewBag.openid = openid;
+            return View();
+        }
+
+        public ActionResult Bind(string openid)
         {
             if (string.IsNullOrWhiteSpace(openid))
             {

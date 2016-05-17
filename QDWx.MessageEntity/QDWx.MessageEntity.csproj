@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Gma.QrCodeNet.Encoding">
-      <HintPath>..\..\..\2015暑假项目\发布系统\FBXT\packages\Gma.QrCodeNet.Encoding.dll</HintPath>
+      <HintPath>..\Lib\Gma.QrCodeNet.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

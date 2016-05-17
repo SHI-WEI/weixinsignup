@@ -338,6 +338,7 @@
     <Content Include="Views\Shared\_WxLayout.cshtml" />
     <Content Include="Views\Wx\Scan.cshtml" />
     <Content Include="Views\Wx\JsConfig.cshtml" />
+    <Content Include="Views\Wx\Bind.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

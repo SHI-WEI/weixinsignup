@@ -31,16 +31,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ServiceStack.Common">
-      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Common.dll</HintPath>
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces">
-      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Redis">
-      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Redis.dll</HintPath>
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Redis.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text">
-      <HintPath>..\..\..\Redis\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Text.dll</HintPath>
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.29.0\lib\net35\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -52,11 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\RedisDAL.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
